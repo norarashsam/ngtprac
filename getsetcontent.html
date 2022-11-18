@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <script src="jquery-3.6.1.min.js"></script>
+        <script>
+            $(document).ready(function(){
+               $("#b1").click(function(){
+                var str=$("p").text();
+                alert(str);
+               });
+               $("#b2").click(function(){
+                $("p").text("Rohit 229667")
+               })
+            })
+        </script>
+    </head>
+    <body>
+        <button id = "b1">Get all Paragraph's Text</button>
+        <p>This is Paragraph</p>
+        <p>This is another Paragraph</p>
+        <button id = "b2">Set all Paragraph's Text</button>
+        <p>This is Paragraphy</p>
+        <p>This is another Paragraphy</p>
+    </body>
+</html>

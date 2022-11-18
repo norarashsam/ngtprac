@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Creating JSON</title>
+	</head>
+	<body>
+		<script type = "text/javascript">
+		var data={
+		"name":"Aarti_229610",
+		"class":"TYIT",
+		"age":20
+		};
+		document.writeln(JSON.stringify(data)+"<br/>");
+		document.writeln(JSON.stringify(data,["name","class","age"])+"<br/>");
+		document.writeln(JSON.stringify(data,["name","class","age"],5));
+		</script>
+	</body>
+</html>

@@ -1,0 +1,36 @@
+<html>
+	<head>
+		<title>Creating JSON</title>
+	</head>
+	<body>
+		<script type = "text/javascript">
+		var data= '{"name":"Aarti_229610","class":"TYIT","age":20}';
+		var obj = JSON.parse(data,function(name,value)
+		{
+		return value;
+		}
+		);
+	document.writeln(obj.name);
+	for (key in obj)
+	{
+		document.write("<br />"+key+":"+obj[key]);
+	}
+	var obj=JSON.parse(data,function(name,value)
+	{
+		if(name=="age")
+		{
+			return undefined;
+		}
+		else
+		{
+			return value;
+		}
+	}
+	);
+	for(key in obj)
+	{
+		document.writeln("<br>"+key+":"+obj[key]);
+	}
+		</script>
+	</body>
+</html>
